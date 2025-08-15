@@ -105,3 +105,6 @@ music.addEventListener('timeupdate', updateProgressBar);
 playerProgress.addEventListener('click', setProgressBar);
 
 loadMusic(songs[musicIndex]);
+
+let isAnimating = false;
+let pullDeltaX = 0;
