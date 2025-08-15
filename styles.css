@@ -10,6 +10,7 @@ body{
     font-size: 12px;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -35,6 +36,18 @@ body{
     filter: blur(15px);
     -webkit-filter: blur(50px);
     transform: scale(1.1);
+}
+
+.banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vh;
+
+    & img{
+        height: 115px;
+        width: 47vh;
+    }
 }
 
 .container{

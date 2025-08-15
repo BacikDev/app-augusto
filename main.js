@@ -18,18 +18,23 @@ const songs = [
         displayName: 'The Charmer\'s Call',
         cover: 'assets/obras/1.jpg',
         artist: 'Hanu Dixit',
+        context:'adwdoiqowdwd',
     },
     {
         path: 'assets/musica/2.mp3',
         displayName: 'You Will Never See Me Coming',
         cover: 'assets/obras/2.jpg',
         artist: 'NEFFEX',
+        context:'adwdoiqowdwd',
+
     },
     {
         path: 'assets/musica/3.mp3',
         displayName: 'Intellect',
         cover: 'assets/obras/3.jpg',
         artist: 'Yung Logos',
+        context:'adwdoiqowdwd',
+
     }
 ];
 
