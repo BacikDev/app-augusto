@@ -38,17 +38,7 @@ body{
     transform: scale(1.1);
 }
 
-.banner{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vh;
 
-    & img{
-        height: 115px;
-        width: 47vh;
-    }
-}
 
 .container{
     background-color: #e7e7e7;
