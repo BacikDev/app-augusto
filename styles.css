@@ -81,7 +81,7 @@ header{
     height: 275px;
     position: relative;
     top: -50px;
-    left: 20px;
+    left: 10px;
     overflow: hidden;
 
     &:hover{
@@ -181,6 +181,8 @@ h3{
 
 footer{
     position: absolute;
+    display: flex;
+    justify-content: center;
     bottom: 0;
     left: 0;
     width: 100vw;
@@ -191,7 +193,6 @@ footer{
         position: relative;
         width: 150%;
         height: 100%;
-        left: -90px;
         filter: drop-shadow(0 15px 30px rgb(255, 250, 250));
     }
 }
