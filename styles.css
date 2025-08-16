@@ -81,6 +81,12 @@ header{
     &:hover{
         animation: remove-overflow 2s forwards;
     }
+    &:not(:hover){
+        animation: show-overflow 2s forwards;
+    }
+    &:not(:hover) .card-data{
+        animation: remove-data 1s forwards;
+    }
 
     &:hover .card-data{
         animation: show-data 1s forwards;
@@ -201,7 +207,7 @@ footer{
 
 @keyframes show-data{
     50%{
-        transform: translateY(-10rem);
+        transform: translateY(-15rem);
     }
     100%{
         transform: translateY(-7rem);
@@ -211,5 +217,27 @@ footer{
 @keyframes remove-overflow {
     to{
         overflow: initial;
+    }
+}
+
+@keyframes remove-data {
+    0%{
+        transform: translateY(-7rem);
+    }
+    50%{
+        transform: translateY(-15rem);
+    }
+    100%{
+        transform: translateY(-.2rem);
+    }
+}
+
+@keyframes show-overflow {
+    0%{
+        overflow: initial;
+        pointer-events: none;
+    }
+    50%{
+        overflow: hidden;
     }
 }
