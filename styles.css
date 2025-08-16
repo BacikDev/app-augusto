@@ -62,6 +62,7 @@ header{
     width: 370px;
     border-radius: 20px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    
 
     &:hover{
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
@@ -75,6 +76,17 @@ header{
     position: relative;
     top: -50px;
     left: 20px;
+    overflow: hidden;
+
+    &:hover{
+        animation: remove-overflow 2s forwards;
+    }
+
+    &:hover .card-data{
+        animation: show-data 1s forwards;
+        opacity: 1;
+        transition: opacity .3s;
+    }
 
     & img{
         object-fit: cover;
@@ -82,10 +94,6 @@ header{
         height: 0;
         width: 0;
         opacity: 0;
-
-        &:hover{
-            box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.8);
-        }
 
         &.active{
             width: 100%;
@@ -173,5 +181,35 @@ footer{
         height: 100%;
         left: -90px;
         filter: drop-shadow(0 15px 30px rgb(255, 250, 250));
+    }
+}
+
+.card-data{
+    width: 310px;
+    height: 220px;
+    border-radius: 10px;
+    position: absolute;
+    padding: 15px;
+    left: 8px;
+    bottom: -190px;
+    background-color: #e7e7e7;
+    z-index: 3;
+    box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.8);
+    opacity: .5;
+    transition: opacity 1s 1s;
+}
+
+@keyframes show-data{
+    50%{
+        transform: translateY(-10rem);
+    }
+    100%{
+        transform: translateY(-7rem);
+    }
+}
+
+@keyframes remove-overflow {
+    to{
+        overflow: initial;
     }
 }
