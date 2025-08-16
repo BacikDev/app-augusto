@@ -8,7 +8,8 @@ const image = document.getElementById('cover'),
     prevBtn = document.getElementById('prev'),
     nextBtn = document.getElementById('next'),
     playBtn = document.getElementById('play'),
-    background = document.getElementById('bg-img');
+    background = document.getElementById('bg-img'),
+    textObra = document.getElementById('text-obra');
 
 const music = new Audio();
 
@@ -18,28 +19,28 @@ const song = [
         displayName: 'Nombre de la obra 1',
         cover: 'assets/obras/1.jpg',
         artist: 'Clarisa Gómez',
-        context: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        context: 'Lorem Ipsum 1 simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
     },
     {
         path: 'assets/musica/2.mp3',
         displayName: 'Nombre de la obra 2',
         cover: 'assets/obras/2.jpg',
         artist: 'Clarisa Gómez',
-        context: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        context: 'Lorem Ipsum 2 simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
     },
     {
         path: 'assets/musica/3.mp3',
         displayName: 'Nombre de la obra 3',
         cover: 'assets/obras/3.jpg',
         artist: 'Clarisa Gómez',
-        context: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        context: 'Lorem Ipsum 3 simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
     },
     {
         path: 'assets/musica/4.mp3',
         displayName: 'Nombre de la obra 4',
         cover: 'assets/obras/4.jpg',
         artist: 'Clarisa Gómez',
-        context: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+        context: 'Lorem Ipsum 4 simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
     },
 ];
 
@@ -78,6 +79,7 @@ function loadMusic(song){
     artist.textContent = song.artist;
     image.src = song.cover;
     background.src = song.cover;
+    textObra.textContent = song.context;
 }
 
 function changeMusic(direction){
@@ -91,9 +93,14 @@ function updateProgressBar(){
     const progressPercent = (currentTime / duration) * 100;
     progress.style.width = `${progressPercent}%`;
 
-    const formatTime = (time) => String(Math.floor(time)).padStart(2, '0');
+    const formatTime = (time) =>{
+        if(isNaN(time)) return '00';
+        return String(Math.floor(time)).padStart(2, '0');
+    };
     durationEl.textContent = `${formatTime( duration / 60)}: ${formatTime(duration % 60)}`;
     currentTimeEl.textContent = `${formatTime(currentTime / 60)}: ${formatTime(currentTime % 60)}`;
+
+
 }
 
 function setProgressBar(e){
