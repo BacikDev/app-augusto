@@ -73,7 +73,6 @@ header{
 
     &:hover{
             box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
-
     }
 }
 
@@ -434,8 +433,45 @@ footer{
 } */
 
 @media (width < 376px) {
+
     header{
         height: 4rem;
+    }
+    
+    .container{
+        margin: 5rem 0;
+        height: 33rem;
+        width: 22rem;        
+    }
+    
+    .player-img{
+        margin: 0 auto;
+        width: 21rem;
+        height: 18rem;
+        top: -2%;
+    }
+    
+    .player-controls{
+        position: relative;
+        display: flex;
+        gap: 2rem;
+        margin: 0 auto 1rem;
+
+        & .fa-solid{
+            font-size: 2rem;
+            color: #666;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover{
+                filter: brightness(40%);
+            }
+        }
+
+        & .play-button{
+            font-size: 3.5rem;
+            position: relative;
+        }
     }
 
 }
