@@ -12,10 +12,8 @@
 body{
     min-height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
     font-family: 'Inter';
-    font-size: 12px;
     user-select: none;
 }
 
@@ -52,36 +50,39 @@ header{
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100px;
+    height: 5rem;
 
     & img{
         width: 100%;
         height: 100%;
-        filter: drop-shadow(0 15px 30px rgb(255, 250, 250));
+        filter: drop-shadow(0 1rem 2rem rgb(233, 233, 233));
     }
 }
 
 .container{
     background-color: #e7e7e7;
-    margin-top: 180px;
-    height: 480px;
-    width: 350px;
-    border-radius: 20px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    margin: 14rem auto;
+    height: 32rem;
+    width: 22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 2rem;
+    box-shadow: 0 .4rem 1rem rgba(0, 0, 0, 0.3);
     
 
     &:hover{
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
 
     }
 }
 
 .player-img{
-    width: 330px;
-    height: 275px;
+    margin: 0 auto;
+    width: 21rem;
+    height: 18rem;
     position: relative;
-    top: -50px;
-    left: 10px;
+    top: -10%;
     overflow: hidden;
 
     &:hover{
@@ -102,7 +103,7 @@ header{
 
     & img{
         object-fit: cover;
-        border-radius: 20px;
+        border-radius: 1rem;
         height: 0;
         width: 0;
         opacity: 0;
@@ -117,29 +118,29 @@ header{
 }
 
 h2{
-    font-size: 25px;
+    font-size: 1.8rem;
     text-align: center;
     font-weight: 700;
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 
 h3{
-    font-size: 18px;
+    font-size: 1.5rem;
     text-align: center;
     font-weight: 600;
-    margin-top: 10px;
+    margin-top: .3rem;
 }
 
 .player-progress{
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 1rem;
     cursor: pointer;
-    margin: 40px 20px 35px;
+    margin: 2rem 1rem 2.3rem;
     height: 6px;
 
     & .progress{
         background-color: #212121;
-        border-radius: 5px;
+        border-radius: 2rem;
         height: 100%;
         width: 0;
         transition: width 0.1s linear;
@@ -147,7 +148,7 @@ h3{
 
     & .music-duration{
         position: relative;
-        top: -25px;
+        top: -1.8rem;
         display: flex;
         justify-content: space-between;
     }
@@ -156,13 +157,11 @@ h3{
 .player-controls{
     position: relative;
     display: flex;
-    gap: 25px;
-    top: -15px;
-    left: 98px;
-    width: 200px;
+    gap: 2rem;
+    margin: 0 auto 1rem;
 
     & .fa-solid{
-        font-size: 30px;
+        font-size: 2rem;
         color: #666;
         cursor: pointer;
         transition: all 0.3s ease;
@@ -173,9 +172,8 @@ h3{
     }
 
     & .play-button{
-        font-size: 45px;
+        font-size: 3.5rem;
         position: relative;
-        top: 3px;
     }
 }
 
@@ -249,9 +247,195 @@ footer{
     }
 }
 
-@media  (width > 1219px) {
+/* @media  (width > 1219px) {
     header{
         height: 300px;
+    }
+
+    .container{
+        height: 1900px;
+        width: 1100px;
+        border-radius: 100px;
+    }
+
+    h2{
+        font-size: 80px;
+        margin: 120px 0 30px;
+    }
+    h3{
+        font-size: 70px;
+    }
+
+    .player-img{
+        width: 1050px;
+        height: 1000px;
+        top: -100px;
+        left: 23px;
+        border-radius: 80px;
+    }
+
+    .player-progress{
+        border-radius: 5px;
+        margin: 150px 40px 55px;
+        height: 26px;
+
+        & .progress{
+            border-radius: 25px;
+        }
+
+        & .music-duration{
+            top: -85px;
+        }
+
+        & span{
+            font-size: 44px;
+            font-weight: 600;
+            margin: 0 20px;
+        }
+    }
+    .player-controls{
+        gap: 125px;
+        left: 200px;
+        width: 200px;
+        top: 130px;
+    
+        & .fa-solid{
+            font-size: 130px;
+        }
+    
+        & .play-button{
+            font-size: 145px;
+        }
+    }
+    
+.card-data{
+    width: 1000px;
+    height: 820px;
+    border-radius: 40px;
+    left: 25px;
+    bottom: -700px;
+    padding: 60px 30px;
+
+    & span{
+        font-size: 52px;
+    }
+}
+
+    footer{
+        height: 200px;
+    }
+
+    @keyframes show-data{
+        50%{
+            transform: translateY(-45rem);
+        }
+    }
+
+    @keyframes remove-data {
+        0%{
+            transform: translateY(-7rem);
+        }
+        50%{
+            transform: translateY(-50rem);
+        }
+        100%{
+            transform: translateY(-.2rem);
+        }
+    }
+} */
+
+/* @media (width > 414px) and (width < 1219px) {
+
+    .container{
+        height: 80rem;
+        width: 40rem;
+    }
+
+    h2{
+        font-size: 4rem;
+        margin: 120px 0 30px;
+    }
+    h3{
+        font-size: 3.5rem;
+    }
+
+    .player-img{
+        width: 44rem;
+        height: 50rem;
+        top: -100px;
+        left: 23px;
+        border-radius: 80px;
+    }
+
+    .player-progress{
+        border-radius: 5px;
+        margin: 150px 40px 55px;
+        height: 26px;
+
+        & .progress{
+            border-radius: 25px;
+        }
+
+        & .music-duration{
+            top: -85px;
+        }
+
+        & span{
+            font-size: 44px;
+            font-weight: 600;
+            margin: 0 20px;
+        }
+    }
+    .player-controls{
+        gap: 125px;
+        left: 200px;
+        width: 200px;
+        top: 130px;
+    
+        & .fa-solid{
+            font-size: 130px;
+        }
+    
+        & .play-button{
+            font-size: 145px;
+        }
+    }
+    
+.card-data{
+    width: 1000px;
+    height: 820px;
+    border-radius: 40px;
+    left: 25px;
+    bottom: -700px;
+    padding: 60px 30px;
+
+    & span{
+        font-size: 52px;
+    }
+}
+
+    @keyframes show-data{
+        50%{
+            transform: translateY(-45rem);
+        }
+    }
+
+    @keyframes remove-data {
+        0%{
+            transform: translateY(-7rem);
+        }
+        50%{
+            transform: translateY(-50rem);
+        }
+        100%{
+            transform: translateY(-.2rem);
+        }
+    }
+} */
+
+@media (width < 376) {
+     header{
+        height: 100rem;
     }
 
     .container{
