@@ -246,7 +246,7 @@ footer{
     }
 }
 
-/* @media  (width > 1219px) {
+@media  (width > 1219px) {
     header{
         height: 300px;
     }
@@ -341,7 +341,7 @@ footer{
             transform: translateY(-.2rem);
         }
     }
-} */
+}
 
 /* @media (width > 414px) and (width < 1219px) {
 
@@ -440,7 +440,7 @@ footer{
     
     .container{
         margin: 5rem 0;
-        height: 80%;
+        height: 33rem;
         width: 22rem;        
     }
     
