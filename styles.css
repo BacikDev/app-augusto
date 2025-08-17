@@ -342,99 +342,93 @@ footer{
     }
 }
 
-/* @media (width > 414px) and (width < 1219px) {
+@media (height > 377px) and (height < 1219px) {
 
     .container{
-        height: 80rem;
-        width: 40rem;
+        margin: 7rem 0 0;
+        height: 30rem;
+        width: 22rem;
     }
 
     h2{
-        font-size: 4rem;
+        font-size: 2rem;
         margin: 120px 0 30px;
     }
     h3{
-        font-size: 3.5rem;
+        font-size: 1.8rem;
     }
 
     .player-img{
-        width: 44rem;
-        height: 50rem;
-        top: -100px;
-        left: 23px;
-        border-radius: 80px;
+        margin: 0 auto;
+        width: 18rem;
+        height: 15rem;
+        top: -5%;
     }
 
-    .player-progress{
-        border-radius: 5px;
-        margin: 150px 40px 55px;
-        height: 26px;
+ .player-progress span{
+        font-size: .8rem;
+    }
+    
+    .player-controls{
+        position: relative;
+        display: flex;
+        gap: 2rem;
+        margin: 0 auto 1rem;
 
-        & .progress{
-            border-radius: 25px;
+        & .fa-solid{
+            font-size: 1.5rem;
+            color: #666;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover{
+                filter: brightness(40%);
+            }
         }
 
-        & .music-duration{
-            top: -85px;
+        & .play-button{
+            font-size: 2.5rem;
+            position: relative;
         }
+    }
+
+    h2{
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+
+    .card-data{
+        width: 17.4rem;
+        height: 13.5rem;
+        margin: 0 .3rem;
 
         & span{
-            font-size: 44px;
-            font-weight: 600;
-            margin: 0 20px;
+            font-size: 1rem;
         }
     }
-    .player-controls{
-        gap: 125px;
-        left: 200px;
-        width: 200px;
-        top: 130px;
-    
-        & .fa-solid{
-            font-size: 130px;
-        }
-    
-        & .play-button{
-            font-size: 145px;
-        }
-    }
-    
-.card-data{
-    width: 1000px;
-    height: 820px;
-    border-radius: 40px;
-    left: 25px;
-    bottom: -700px;
-    padding: 60px 30px;
-
-    & span{
-        font-size: 52px;
-    }
-}
-
     @keyframes show-data{
         50%{
             transform: translateY(-45rem);
         }
     }
-
+    
     @keyframes remove-data {
         0%{
-            transform: translateY(-7rem);
+            transform: translateY(-1rem);
         }
         50%{
-            transform: translateY(-50rem);
+            transform: translateY(-13rem);
         }
         100%{
-            transform: translateY(-.2rem);
+            transform: translateY(2rem);
         }
     }
-} */
+}
 
-@media (width < 376px) {
-    main{
-        height: 100%;
-    }
+/* @media (height < 376px) {
     header{
         height: 4rem;
     }
@@ -496,4 +490,4 @@ footer{
         }
     }
 
-}
+} */
