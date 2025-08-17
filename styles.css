@@ -429,7 +429,7 @@ footer{
     }
 }
 
-/* @media (height < 376px) {
+@media (height < 376px) {
     header{
         height: 4rem;
     }
@@ -491,4 +491,4 @@ footer{
         }
     }
 
-} */
+}
