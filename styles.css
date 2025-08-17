@@ -393,7 +393,7 @@ footer{
     }
 
     h2{
-        margin: 0 auto;
+        margin: 3rem auto 0;
         font-size: 1.5rem;
     }
     h3{
@@ -404,6 +404,7 @@ footer{
         width: 17.4rem;
         height: 13.5rem;
         margin: 0 .3rem;
+        top: 10.5rem;
 
         & span{
             font-size: 1rem;
@@ -411,7 +412,7 @@ footer{
     }
     @keyframes show-data{
         50%{
-            transform: translateY(-45rem);
+            transform: translateY(-10rem);
         }
     }
     
@@ -420,7 +421,7 @@ footer{
             transform: translateY(-1rem);
         }
         50%{
-            transform: translateY(-13rem);
+            transform: translateY(-10rem);
         }
         100%{
             transform: translateY(2rem);
