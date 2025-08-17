@@ -18,7 +18,7 @@ body{
 }
 
 main{
-    max-height: 100%;
+    max-height: 100vh;
     max-width: 100%;
 }
 
@@ -433,99 +433,9 @@ footer{
     }
 } */
 
-@media (width < 376) {
-     header{
-        height: 100rem;
+@media (width < 376px) {
+    header{
+        height: 4rem;
     }
 
-    .container{
-        height: 1900px;
-        width: 1100px;
-        border-radius: 100px;
-    }
-
-    h2{
-        font-size: 80px;
-        margin: 120px 0 30px;
-    }
-    h3{
-        font-size: 70px;
-    }
-
-    .player-img{
-        width: 1050px;
-        height: 1000px;
-        top: -100px;
-        left: 23px;
-        border-radius: 80px;
-    }
-
-    .player-progress{
-        border-radius: 5px;
-        margin: 150px 40px 55px;
-        height: 26px;
-
-        & .progress{
-            border-radius: 25px;
-        }
-
-        & .music-duration{
-            top: -85px;
-        }
-
-        & span{
-            font-size: 44px;
-            font-weight: 600;
-            margin: 0 20px;
-        }
-    }
-    .player-controls{
-        gap: 125px;
-        left: 200px;
-        width: 200px;
-        top: 130px;
-    
-        & .fa-solid{
-            font-size: 130px;
-        }
-    
-        & .play-button{
-            font-size: 145px;
-        }
-    }
-    
-.card-data{
-    width: 1000px;
-    height: 820px;
-    border-radius: 40px;
-    left: 25px;
-    bottom: -700px;
-    padding: 60px 30px;
-
-    & span{
-        font-size: 52px;
-    }
-}
-
-    footer{
-        height: 200px;
-    }
-
-    @keyframes show-data{
-        50%{
-            transform: translateY(-45rem);
-        }
-    }
-
-    @keyframes remove-data {
-        0%{
-            transform: translateY(-7rem);
-        }
-        50%{
-            transform: translateY(-50rem);
-        }
-        100%{
-            transform: translateY(-.2rem);
-        }
-    }
 }
