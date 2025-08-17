@@ -438,16 +438,20 @@ footer{
     }
     
     .container{
-        margin: 5rem 0 0;
-        height: 33rem;
-        width: 22rem;        
+        margin: 7rem 0 0;
+        height: 28rem;
+        width: 20rem;        
     }
     
     .player-img{
         margin: 0 auto;
-        width: 21rem;
-        height: 18rem;
+        width: 18rem;
+        height: 15rem;
         top: -2%;
+    }
+
+    .player-progress span{
+        font-size: .8rem;
     }
     
     .player-controls{
@@ -457,7 +461,7 @@ footer{
         margin: 0 auto 1rem;
 
         & .fa-solid{
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: #666;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -468,8 +472,25 @@ footer{
         }
 
         & .play-button{
-            font-size: 3.5rem;
+            font-size: 2.5rem;
             position: relative;
+        }
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1.2rem;
+    }
+
+    .card-data{
+        width: 17.4rem;
+        height: 16.5rem;
+        margin: 0 .3rem;
+
+        & span{
+            font-size: 1rem;
         }
     }
 
