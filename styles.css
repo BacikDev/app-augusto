@@ -432,7 +432,9 @@ footer{
 } */
 
 @media (width < 376px) {
-
+    main{
+        height: 100%;
+    }
     header{
         height: 4rem;
     }
