@@ -252,7 +252,7 @@ footer{
     }
 }
 
-@media  (width > 1219px) {
+@media  (height > 1219px) {
     header{
         height: 300px;
     }
