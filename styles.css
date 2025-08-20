@@ -254,7 +254,7 @@ footer{
     }
 }
 
-@media  (height > 1219px) {
+/* @media  (height > 1219px) {
     header{
         height: 300px;
     }
@@ -349,28 +349,27 @@ footer{
             transform: translateY(-.2rem);
         }
     }
-}
+} */
 
 @media (width > 769px) and (width < 1219px) {
 
-    .container{
-        margin: 7rem 0 0;
-        height: 31.5rem;
-        width: 22rem;
+    header{
+        height: 10rem;
     }
 
-    h2{
-        font-size: 2rem;
-        margin: 120px 0 30px;
+    footer{
+        height: 5rem;
     }
-    h3{
-        font-size: 1.8rem;
+
+    .container{
+        height: 61.5rem;
+        width: 52rem;
     }
 
     .player-img{
         margin: 0 auto;
-        width: 18rem;
-        height: 15rem;
+        width: 50rem;
+        height: 35rem;
         top: -5%;
     }
 
@@ -382,11 +381,11 @@ footer{
         position: relative;
         display: flex;
         justify-content: center;
-        gap: 2rem;
+        gap: 7rem;
         margin: 0 auto 1rem;
 
         & .fa-solid{
-            font-size: 1.5rem;
+            font-size: 3.5rem;
             color: #666;
             cursor: pointer;
             transition: all 0.3s ease;
@@ -397,27 +396,31 @@ footer{
         }
 
         & .play-button{
-            font-size: 2.5rem;
+            font-size: 5.5rem;
             position: relative;
         }
     }
 
     h2{
-        margin: 3rem auto 0;
-        font-size: 1.5rem;
+        margin: 0 auto 0;
+        font-size: 3.5rem;
+    }
+
+    h4{
+        font-size: 3.3rem;
     }
     h3{
-        font-size: 1.2rem;
+        font-size: 3rem;
     }
 
     .card-data{
-        width: 17.4rem;
-        height: 13.5rem;
-        margin: 0 .3rem;
+        width: 49rem;
+        height: 43.5rem;
+        margin: 0.5rem;
         top: 10.5rem;
 
         & span{
-            font-size: 1rem;
+            font-size: 2rem;
         }
     }
 
