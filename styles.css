@@ -362,7 +362,7 @@ footer{
     }
 
     .container{
-        height: 50rem;
+        height: 65rem;
         width: 50rem;
     }
 
@@ -373,8 +373,16 @@ footer{
         top: -5%;
     }
 
+.player-progress{
+
+    & .music-duration{
+        margin: 0 1rem;
+        top: -3rem;
+    }
+    }
+
  .player-progress span{
-        font-size: .8rem;
+        font-size: 1.8rem;
     }
     
     .player-controls{
@@ -382,7 +390,7 @@ footer{
         display: flex;
         justify-content: center;
         gap: 7rem;
-        margin: 0 auto 1rem;
+        margin: 5rem auto 1rem;
 
         & .fa-solid{
             font-size: 3.5rem;
