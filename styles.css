@@ -254,7 +254,7 @@ footer{
     }
 }
 
-/* @media  (height > 1219px) {
+@media  (width > 1025px) {
     header{
         height: 300px;
     }
@@ -349,9 +349,9 @@ footer{
             transform: translateY(-.2rem);
         }
     }
-} */
+}
 
-@media (width > 769px) and (width < 1219px) {
+@media (width > 769px) and (width < 1025px) {
 
     header{
         height: 10rem;
@@ -362,8 +362,8 @@ footer{
     }
 
     .container{
-        height: 61.5rem;
-        width: 52rem;
+        height: 50rem;
+        width: 50rem;
     }
 
     .player-img{
