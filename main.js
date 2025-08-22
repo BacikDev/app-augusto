@@ -24,7 +24,7 @@ const song = [
     },
     {
         path: 'assets/musica/1.mp3',
-        displayName: 'El mate como talisman',
+        displayName: 'EL MATE COMO TALISMAN',
         displayName2: '(co) Nectar Divino',
         cover: 'assets/obras/1.jpg',
         artist: 'Lourdes Paola Vega',
@@ -32,7 +32,7 @@ const song = [
     },
     {
         path: 'assets/musica/2.mp3',
-        displayName: 'Inocencia Interrumpida',
+        displayName: 'INOCENCIA INTERRUMPIDA',
         cover: 'assets/obras/2.jpg',
         artist: 'Ana María Figueroa',
         context: 'Esta pieza es un grito de alerta, un llamado a la reflexión y a la acción, a través de ella quiero destacar la fragilidad de los niños, seres inocentes y puros, que merecen nuestra protección y cuidado. <br>La infancia es un periodo de descubrimiento y crecimiento, pero también un momento de gran vulnerabilidad. <br>INOCENCIA INTERRUMPIDA es un viaje visual  que nos lleva, de alguna manera a ver como la negligencia y la maldad los hacen víctimas, robando e interrumpiendo su inocencia, dejando huellas y cicatrices que duran toda sus vidas. <br>Quiero utilizar mi voz y mi arte para incitarte a “ VOS” a proteger y resguardar con celo, pasión y responsabilidad ese tesoro único e irrepetible que es la inocencia de nuestros niños. <br>“Los niños son como el cemento fresco…todo lo que cae sobre ellos deja una huella para siempre”',
@@ -53,10 +53,24 @@ const song = [
     },
     {
         path: 'assets/musica/5.mp3',
-        displayName: 'TRANSMUTACIÓN <br>DE LAS REGLAS',
+        displayName: 'TRANSMUTACIÓN<br>DE LAS REGLAS',
         cover: 'assets/obras/4.jpg',
         artist: 'María Centurion',
         context: 'Esta obra es una expresión de transformación y rebeldía frente a las reglas y patrones establecidos. La presento sobre un vestido clásico de noche en color gris, que simboliza esas reglas viejas y obsoletas que muchas veces ya no sirven o nos limitan. Los detalles en colores variados, que están en forma de apliques, representan símbolos de rebeldía y resistencia ante esas normas. <br> La tela deshilachada y los colores vibrantes reflejan el deseo de cambio. El violeta simboliza ese anhelo de transformar, de ir más allá de lo establecido. El celeste expresa la seguridad que siento al asimilar ideas nuevas y diferentes. Y el verde, la esperanza en seguir avanzando y en lograr una verdadera transformación.  <br>Esta obra es, además, una pieza de comunicación sobre la costura y las telas, que contienen un código de uso y significado, asociado a patrones familiares, conductas y roles sociales. Con ella, he querido rebeldemente, pero con elegancia, desafiar esas ideas predefinidas y mostrar que podemos reinventarnos y transformar esas reglas que aprendimos desde siempre.',
+    },
+    {
+        path: 'assets/musica/7.mp3',
+        displayName: 'UNA NUEVA OPORTUNIDAD',
+        cover: 'assets/obras/4.jpg',
+        artist: 'Galván Amalia',
+        context: 'Quiero transmitirles que, teniendo fe, es posible salir de esa oscuridad. Es importante confiar en que nada es imposible para Dios, incluso cuando a veces sentimos que nos faltan fuerzas. "Se puede" es una frase que llevo muy en mi corazón, porque sé que, gracias a su compasión y misericordia, yo estoy aquí, viva. Él fue quien me sanó, quien cambió mi vida y elevó mi alma. Esta experiencia me enseñó a creer en lo imposible y a confiar en que, con fe y esperanza, todo se puede superar.<br> <br>Para esta obra, elegí recursos que tienen un profundo significado simbólico. La tela del vestido, con estampas a rayas, representa la ida y vuelta de la vida, esa constante alternancia entre momentos de calma y de dificultad, entre lo esperado y lo inesperado. Las rayas reflejan esa dinámica, ese movimiento perpetuo en el que estamos inmersos, siempre en búsqueda de equilibrio y transformación.<br>El turbante en negro simboliza lo feo, las experiencias negativas, los obstáculos y las heridas que atraviesa la vida. Es la parte más oscura, lo que a veces nos pesa y nos desafía a seguir adelante. Pero también representa esa fuerza que surge desde los momentos difíciles, esa resistencia que nos fortalece y nos prepara para lo que viene.<br>El velo blanco y brillante, que rodea toda la obra, simboliza la vida en su aspecto más bello y luminoso. Es la esperanza, la pureza y todo lo bueno que podemos encontrar en ella. Este velo envuelve y envuelve toda la composición, recordándonos que, incluso en medio de lo oscuro, siempre hay luz, belleza y aquello que nos llena de alegría.<br>Con estos recursos, busqué transmitir que la vida no es solo dificultades, sino también esperanza y belleza. Cada elemento refleja distintas emociones y aspectos de nuestro recorrido, y la obra en conjunto invita a reflexionar sobre cómo, incluso en los momentos más duros, podemos encontrar la luz que nos guía y nos impulsa a seguir adelante.',
+    },
+    {
+        path: 'assets/musica/8.mp3',
+        displayName: 'EL AMOR… ES ASÍ',
+        cover: 'assets/obras/4.jpg',
+        artist: 'Roa María',
+        context: 'Mes de septiembre...<br>La esencia del jazmín me transporta,<br> a un momento de nostalgia.<br>Y es, que tu enfermedad amor, <br>me hacía enfrentar a un nuevo desafío.<br>Era comenzar a andar un camino desconocido,<br> lleno de pruebas<br>Ya no más alegrías, ni bromas, ni historias...<br>Tus ramos de rosas quedaron en el olvido.<br>¿Dónde estás amor? <br>¿Quién te arrebató de mi realidad?<br>Tus recuerdos, se desvanecen en el silencio de tu mente. <br>Los momentos compartidos, sólo quedan en mi corazón. <br>Fue en septiembre, que comencé a perderte<br>La persona que amé, ya no estaba,<br>sólo quedaba la sombra,<br>del gran amor que nos unió.<br>Tú, atrapado en tu inconsciencia, <br>yo, cautiva en la jaula de tu enfermedad. <br>Y entendí... que la vida es un momento...<br>Todo cambia...<br>De repente, llega la luz, se abre mi mente<br>una fragancia de bambú inunda mi ser,<br>lo que parecía una carga ya no lo es. <br>Acá estoy... a tu lado, sin condición.<br>La vida es así... <br>El amor cambia, no desaparece, <br>sigue siendo amor, <br>transformado en cariño, cuidado, protección. <br>Me siento en paz. <br>La calma me invade... <br>Nada más importa, solo Tú y Yo.',
     },
 ];
 
